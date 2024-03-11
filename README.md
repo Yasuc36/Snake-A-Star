@@ -1,5 +1,9 @@
+> [!IMPORTANT]
+> Tento projekt sloužil k testování A* algoritmu.
+> Struktura kódu by chtěla vylepšit.
+
 # Hra Had
-***
+
 Jedná se o jednoduchou hru had. Jejím úkolem je dosáhnout největšího skóre jezením jablek pomocí hada.  
 Had sní jablko tak, že na něj najede. Po snězení se hadův ocas prodlouží o jedno políčko a nové jablko se objeví
 na neazplněném políčku. Hra končí naražením hada do překážky (Okraj okna nebo své tělo). Minimální skóre je 0
@@ -9,9 +13,13 @@ na neazplněném políčku. Hra končí naražením hada do překážky (Okraj o
 Tato hra se skládá z dvou oken. Jedním je menu a druhou je hra samotná.  
 Spouští se ze souboru 'main.py'.
 
-##Okna aplikace
-***
-###Menu
+Text k implementaci a hodnocení algorimtu: [vancafra.pdf](./vancafra.pdf)
+
+Ukázka: [![Ukazka](https://img.youtube.com/vi/ohgrOE_7RRE/hqdefault.jpg)](https://www.youtube.com/embed/ohgrOE_7RRE)
+
+## Okna aplikace
+
+### Menu
 Má dvě tlačítka. Pro jejich aktivaci na ně najeďte myší a klikněte levým tlačítkem myši.  
 - **Manual Play** - Spustí hru, která je ovládaná hráčem (viz. *Ovládání*).
 - **AI Play** - Spustí hru, která je ovládaná řídícím algoritmem (A*).
@@ -23,7 +31,7 @@ V dolní částí okna je zobrazena statistika (Data po zavření aplikace neukl
     - **min** - Nejmenší dosažené skóre. 
     - **max** - Největší dosažené skóre. 
     - **avg** - Průměrné dosažené skóre (Zaokrouhleno na 2 desetinná místa).
-###Hra
+### Hra
 Okno hry. Skládá se z políček ve tvaru čtverce.  
 - **Typy políček**
   - *černé* - Prázdné políčko
@@ -40,12 +48,12 @@ Okno hry. Skládá se z políček ve tvaru čtverce.
   Od manuálního režimu je zde navíc modrá čára, která znázorňuje cestu, kterou vybral řídící algoritmus (A*).
 - **Skóre** - Jméno okna znázorňuje současné skóre. (+1 za každé sebrané jablko nebo délka hada bez hlavy)
 
-##Soubory aplikace
-***
-###main.py
+## Soubory aplikace
+
+### main.py
 Hlavní soubor, který obstarává okno hlavního menu, ze kterého se spouští hra (pomocí 'Snake.py').
-###snake.py
+### snake.py
 Soubor, který zaobaluje třídu Snake, která se stará o chod hry (viz. okno *Hra*). Využívá soubor 'astar.py'
-###astar.py
+### astar.py
 Soubor, který v sobě má jedinou funkci, která pomocí A* algoritmu najde nejkratší cestu k jablku 
 (Bere v potaz tělo hada a snaží se mu vyhnout).
