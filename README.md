@@ -1,6 +1,6 @@
 > [!IMPORTANT]
-> Tento projekt sloužil k testování A* algoritmu.
-> Struktura kódu by chtěla vylepšit.
+> Tento projekt sloužil primárně k testování A* algoritmu.
+> Struktura kódu by chtěla vylepšit aby lépe odpovídala standardu PEP 8.
 
 # Hra Had
 
