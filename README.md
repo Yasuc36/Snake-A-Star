@@ -1,6 +1,6 @@
 > [!IMPORTANT]
-> Tento projekt sloužil primárně k testování A* algoritmu.
-> Struktura kódu by chtěla vylepšit aby lépe odpovídala standardu PEP 8.
+> Tento projekt sloužil primárně k testování [A* algoritmu](https://cs.wikipedia.org/wiki/A*).
+> Struktura kódu by chtěla vylepšit aby lépe odpovídala standardu [PEP 8](https://peps.python.org/pep-0008/).
 
 # Hra Had
 
